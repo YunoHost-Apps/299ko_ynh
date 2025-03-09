@@ -43,8 +43,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/299Ko/299ko/archive/refs/tags/v2.0.0.tar.gz"
-    sha256 = "7f71860f2f451cf37782b7bc34e9eee29d27b85c138dda8b65781f3f72768b96"
+    url = "https://github.com/299Ko/299ko/archive/40df1b346ed362b8a459f3c50cf87433e3c9e8ed.tar.gz"
+    sha256 = "ab8406715fff713e53d8e3c341adec8ae2f17ebea44bf812dd147ed24391a470"
 
     autoupdate.strategy = "latest_github_tag"
     autoupdate.upstream = "https://github.com/299Ko/299ko"
