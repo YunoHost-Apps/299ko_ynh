@@ -11,6 +11,8 @@ source /usr/share/yunohost/helpers
 # INITIALIZE AND STORE SETTINGS
 #=================================================
 
+email=$(ynh_user_get_info --username=$admin --key=mail)
+
 ynh_app_setting_set --key=php_upload_max_filesize --value=50M
 ynh_app_setting_set --key=php_post_max_size --value=50M
 
@@ -32,6 +34,16 @@ ynh_config_add_phpfpm
 
 # Create a dedicated NGINX config using the conf/nginx.conf template
 ynh_config_add_nginx
+
+#=================================================
+# SETUP APPLICATION WITH CURL
+#=================================================
+ynh_script_progression "Setting up application with CURL..."
+
+# Installation with cURL
+ynh_local_curl "/install.php?submit" "adminEmail=$email" "adminPwd=$password"
+
+ynh_safe_rm "$install_dir/install.php"
 
 #=================================================
 # END OF SCRIPT

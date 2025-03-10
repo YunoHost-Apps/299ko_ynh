@@ -1,2 +1,1 @@
-299Ko is a lightweight and fast French CMS (content management system) written in PHP.
-Inspired by the CMS 99ko, it retains a philosophy focused on simplicity and ease of use. This free software, licensed under GNU GPL v3, is completely free and allows anyone to create their own website, blog, image gallery, and much more, without requiring programming knowledge.
+299Ko est un CMS (système de gestion de contenu) français, léger et rapide. Inspiré du CMS 99ko, il conserve une philosophie axée sur la simplicité et la facilité d'utilisation. Ce logiciel libre permet à quiconque de créer son propre site internet, blog, galerie d'images, et bien plus encore, sans nécessiter de connaissances en programmation.
