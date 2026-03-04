@@ -18,7 +18,7 @@ admindoc = "https://docs.299ko.ovh/francais"
 code = "https://github.com/299Ko/299ko"
 
 [integration]
-yunohost = ">= 12.1.17"
+yunohost = ">= 12.1.38"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -64,4 +64,4 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "php8.3-gd, php8.3-intl, php8.3-mbstring, php8.3-curl, php8.3-xml"
+    packages = "php8.4-gd, php8.4-intl, php8.4-mbstring, php8.4-curl, php8.4-xml"
